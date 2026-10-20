@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#fafaf8" />
+	<title>Семинары и события ТА от Нелли Киливник</title>
+	<meta name="description" content="Пространство для встреч, обучения и профессионального роста в психологии. Быстрая и безопасная оплата участия в событиях Нелли Киливник." />
+
+	<!-- Шрифты Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+	<!-- Иконка «стрелка в квадрате» (переиспользуется через <use>) -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="icon-external" viewBox="0 0 20 20">
+			<rect width="20" height="20" rx="3" fill="#1d74e8" />
+			<path d="M7 13 13 7M8.5 7H13v4.5" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+	</svg>
+
+	<!-- ===== Шапка ===== -->
+	<header class="site-header">
+		<div class="container site-header__inner">
+			<a href="#" class="breadcrumbs">NK <span aria-hidden="true">/</span> EVENTS</a>
+			<a href="#" class="link-external">
+				Telegram
+				<svg class="icon" aria-hidden="true">
+					<use href="#icon-external" />
+				</svg>
+			</a>
+		</div>
+	</header>
+
+	<main>
+		<!-- ===== Первый экран (Hero) ===== -->
+		<section class="hero">
+			<div class="container hero__inner">
+				<div class="hero__content">
+					<span class="badge"><span class="badge__dot" aria-hidden="true"></span>Живые события</span>
+
+					<h1 class="hero__title">
+						Семинары и события <span class="accent">ТА</span> от Нелли&nbsp;Киливник
+					</h1>
+
+					<p class="hero__text">
+						Пространство для встреч, обучения и профессионального роста в психологии.
+						Здесь можно быстро и безопасно оплатить участие в выбранном событии.
+					</p>
+
+					<div class="hero__actions">
+						<button type="button" class="btn btn--primary" id="open-modal">Оплатить участие</button>
+						<a href="#" class="btn btn--secondary">
+							Анонсы в Telegram
+							<svg class="icon" aria-hidden="true">
+								<use href="#icon-external" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<figure class="hero__media">
+					<span class="hero__decor" aria-hidden="true"></span>
+					<img class="hero__image" src="nelly-portrait.webp" alt="Нелли Киливник — организатор семинаров по психологии, в сиреневом пиджаке" width="1024" height="1024" />
+					<figcaption class="hero__caption">Организую важные встречи с заботой о каждом участнике.</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- ===== Секция 01: оформление оплаты ===== -->
+		<section class="section section--white" aria-labelledby="participation-title">
+			<!-- <div class="container section__grid">
+				<div>
+					<p class="eyebrow">01 / Участие</p>
+					<h2 class="section__title" id="participation-title">Оформить оплату</h2>
+					<p class="section__text">
+						Заполните данные участника. После нажатия кнопки откроется защищённое окно оплаты ЮKassa.
+					</p>
+					<ul class="features">
+						<li>Моментальное подтверждение участия</li>
+						<li>Оплата картой, через СБП или кошелёк</li>
+						<li>Чек и детали события придут на email</li>
+					</ul>
+				</div> -->
+
+			<!-- Встроенная форма на странице (та же логика валидации, что и в попапе) -->
+			<!-- <form class="pay-card js-payment-form" id="payment-form-inline" novalidate>
+					<div class="field">
+						<label for="inline-name">Ваше имя</label>
+						<input id="inline-name" name="name" type="text" placeholder="Имя и фамилия" autocomplete="name" required />
+						<span class="field__error" aria-live="polite"></span>
+					</div>
+					<div class="field">
+						<label for="inline-email">Email</label>
+						<input id="inline-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+						<span class="field__error" aria-live="polite"></span>
+					</div>
+					<label class="checkbox">
+						<input type="checkbox" name="offer" required />
+						<span>Я ознакомлен(а) и согласен(на) с <a href="#" target="_blank" rel="noopener">договором оферты</a></span>
+					</label>
+					<button type="submit" class="btn btn--primary btn--block btn--lg" disabled>Перейти к оплате · 25 000 ₸</button>
+					<p class="secure-note">Защищено ЮKassa</p>
+				</form> -->
+			<!-- </div>
+		</section> -->
+
+			<!-- ===== Секция 02: договор оферты ===== -->
+			<!-- <section class="section section--muted" aria-labelledby="offer-title">
+			<div class="container">
+				<p class="eyebrow">02 / Оферта</p>
+				<h2 class="section__title" id="offer-title">Договор оферты</h2>
+				<p class="section__text section__text--wide">
+					Оплачивая участие, вы подтверждаете согласие с условиями участия в мероприятии,
+					правилами возврата и обработки персональных данных. Полный текст договора оферты
+					предоставляется организатором до оплаты.
+				</p>
+			</div>
+		</section> -->
+	</main>
+
+	<!-- ===== Подвал ===== -->
+	<footer class="site-footer">
+		<div class="container site-footer__inner">
+			<div>
+				<h2 class="site-footer__title">Есть идея для события?</h2>
+				<p class="site-footer__text">
+					Если Вы хотите быть тренером и Вам нужен организатор для набора группы,
+					приёма оплаты и модерации процесса — пишите.
+				</p>
+			</div>
+			<address class="site-footer__contacts">
+				<a href="#" class="link-external link-external--green">
+					@nelly_kilivnik
+					<svg class="icon" aria-hidden="true">
+						<use href="#icon-external" />
+					</svg>
+				</a>
+				<a href="tel:+77017958219" class="site-footer__phone">+7 701 795 82 19</a>
+			</address>
+		</div>
+	</footer>
+
+	<!-- ===== Модальное окно с формой оплаты ===== -->
+	<dialog class="modal" id="payment-modal" aria-labelledby="modal-title">
+		<div class="modal__body">
+			<button type="button" class="modal__close" id="close-modal" aria-label="Закрыть окно">
+				<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+					<path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+				</svg>
+			</button>
+
+			<p class="eyebrow">Участие</p>
+			<h2 class="modal__title" id="modal-title">Оформить оплату</h2>
+
+			<form class="js-payment-form" id="payment-form" novalidate>
+				<div class="field">
+					<label for="modal-name">Имя</label>
+					<input id="modal-name" name="name" type="text" placeholder="Имя и фамилия" autocomplete="name" required />
+					<span class="field__error" aria-live="polite"></span>
+				</div>
+				<div class="field">
+					<label for="modal-email">Email</label>
+					<input id="modal-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+					<span class="field__error" aria-live="polite"></span>
+				</div>
+				<div class="field">
+					<label for="modal-phone">Телефон</label>
+					<input id="modal-phone" name="phone" type="tel" placeholder="+7 700 000 00 00" autocomplete="tel" required />
+					<span class="field__error" aria-live="polite"></span>
+				</div>
+				<label class="checkbox">
+					<input type="checkbox" name="offer" required />
+					<span>Я ознакомлен(а) и согласен(на) с <a href="#" target="_blank" rel="noopener">договором оферты</a></span>
+				</label>
+				<button type="submit" class="btn btn--primary btn--block btn--lg" id="pay-button" disabled>Перейти к оплате · 25 000 ₸</button>
+				<p class="secure-note">Защищено ЮKassa</p>
+			</form>
+		</div>
+	</dialog>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
